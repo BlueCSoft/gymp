@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40px"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/size_5dp"
+    android:paddingRight="@dimen/size_5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_3dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+
+        <TextView
+            android:id="@+id/id_item_paylist_mc"
+            style="@style/Text14Style"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:tag="mc"
+            android:text="2251" />
+        <TextView
+            android:id="@+id/id_item_paylist_je"
+            style="@style/Text14Style"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:tag="je"
+            android:text="1000.0" />
+        <TextView
+            android:id="@+id/id_item_paylist_kh"
+            style="@style/Label14Style"
+            android:layout_marginLeft="@dimen/size_12dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:tag="kh"
+            android:gravity="left"/>
+    </LinearLayout>
+
+</LinearLayout>

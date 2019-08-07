@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/condition_selldayreport"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/Text16Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="设置查询条件"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="16dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:text="日期从"/>
+
+        <TextView
+            style="@style/Text16Style"
+            android:id="@+id/id_condition_selldayreport_rq1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/size_8dp"
+            android:gravity="center_vertical|left"
+            android:background="@drawable/border_radius"
+            android:drawableRight="@drawable/drop_down"
+            android:tag="date"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="16dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:text="到"/>
+
+        <TextView
+            style="@style/Text16Style"
+            android:id="@+id/id_condition_selldayreport_rq2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/size_8dp"
+            android:gravity="center_vertical|left"
+            android:background="@drawable/border_radius"
+            android:drawableRight="@drawable/drop_down"
+            android:tag="date"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="16dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:text="营业员"/>
+
+        <Spinner
+            style="@style/Text16Style"
+            android:id="@+id/id_condition_selldayreport_ywy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:background="@drawable/shape_spinner_drop_down"
+            android:spinnerMode="dropdown"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="16dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            android:text="销售类型"/>
+
+        <Spinner
+            style="@style/Text16Style"
+            android:id="@+id/id_condition_selldayreport_xslx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:background="@drawable/shape_spinner_drop_down"
+            android:entries="@array/xslx"
+            android:spinnerMode="dropdown"/>
+    </LinearLayout>
+
+    <include layout="@layout/dialog_bottom"/>
+</LinearLayout>

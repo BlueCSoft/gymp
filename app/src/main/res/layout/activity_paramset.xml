@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_paramset"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.synics.gymp.setting.ParamsetActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_headpanel"
+        android:background="@color/color_titlebg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/txt_set_param_title"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/fontsize_headpanel" />
+
+        <ImageView
+            android:id="@+id/id_set_param_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/login_content"
+            android:padding="@dimen/size_4dp"
+            android:src="@drawable/return_exit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Text18Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="无操作时进入锁屏状态的时间" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="243dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/input_radius"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/id_set_param_locks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/color_gray"
+                android:dividerHeight="1px"
+                android:entries="@array/lockscreen_mins">
+            </ListView>
+        </LinearLayout>
+
+        <TextView
+            style="@style/Text18Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="四舍五入" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/input_radius"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/id_set_param_round"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/color_gray"
+                android:dividerHeight="1px"
+                android:entries="@array/round_scale">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

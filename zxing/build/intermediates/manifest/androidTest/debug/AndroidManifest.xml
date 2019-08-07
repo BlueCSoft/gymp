@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.zxing.client.android.test" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="25" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.google.zxing.client.android.test"
+        android:targetPackage="com.google.zxing.client.android.test" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- unavailable in API 23 -->
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:logo="@drawable/launcher_icon" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="sensorPortrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+
+            <!-- Allow web apps to launch Barcode Scanner by linking to http://zxing.appspot.com/scan. -->
+
+
+            <!-- We also support a Google Product Search URL. -->
+
+
+            <!-- And the UK version. -->
+
+
+            <!-- Support zxing://scan/?... like iPhone app -->
+
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.PreferencesActivity"
+            android:stateNotNeeded="true" />
+        <activity
+            android:name="com.google.zxing.client.android.encode.EncodeActivity"
+            android:stateNotNeeded="true" >
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.book.SearchBookContentsActivity"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.share.ShareActivity"
+            android:screenOrientation="user"
+            android:stateNotNeeded="true" >
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.share.BookmarkPickerActivity"
+            android:stateNotNeeded="true" />
+        <activity
+            android:name="com.google.zxing.client.android.share.AppPickerActivity"
+            android:stateNotNeeded="true" />
+        <activity
+            android:name="com.google.zxing.client.android.HelpActivity"
+            android:screenOrientation="user"
+            android:stateNotNeeded="true" />
+    </application>
+
+</manifest>

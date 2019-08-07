@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text16Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="总价折扣输入" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_defaultpanel"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="@dimen/size_8dp"
+        android:layout_marginRight="@dimen/size_8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="方式" />
+
+        <RadioGroup
+            android:id="@+id/id_totaldisinp_zkatt"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="折扣" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="折价" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/id_totaldisinp_zk"
+            style="@style/Text14Style"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/size_16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/input_radius"
+            android:paddingLeft="4dp"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:text="123" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_defaultpanel"
+        android:layout_marginLeft="@dimen/size_8dp"
+        android:layout_marginRight="@dimen/size_8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="分摊" />
+
+        <RadioGroup
+            android:id="@+id/id_totaldisinp_ftatt"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="厂商" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="友谊" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="共同" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/id_totaldisinp_ft"
+            style="@style/Text14Style"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/size_16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/input_radius"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:paddingLeft="4dp"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="123" />
+    </LinearLayout>
+    <include layout="@layout/dialog_bottom"/>
+</LinearLayout>

@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_paymain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.synics.gymp.cash.PaymainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_headpanel"
+        android:background="@color/color_titlebg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/txt_cash_pay_title"
+            android:textColor="@color/color_white"
+            android:tag="title"
+            android:textSize="@dimen/fontsize_headpanel" />
+
+        <ImageView style="@style/ReturnButtonStyle" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8dp"
+            android:onClick="doShowBillInfo"
+            android:padding="4dp"
+            android:src="@drawable/single" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:tag="payingpanel"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_graybg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="doTotalDiscount"
+                    android:padding="4dp"
+                    android:src="@drawable/rmb" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp">
+
+                    <TextView
+                        style="@style/Label14Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="应付金额：" />
+
+                    <TextView
+                        style="@style/Text16Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.97"
+                        android:gravity="left"
+                        android:tag="amount"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/Label14Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已付金额：" />
+
+                    <TextView
+                        style="@style/Text16Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:tag="yfje"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="6dp">
+
+                    <TextView
+                        style="@style/Label14Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="待付金额：" />
+
+                    <TextView
+                        style="@style/Text16Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:tag="dfje"
+                        android:textStyle="bold"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/Label14Style"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <TextView
+                        style="@style/Text14StyleRed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24dp"
+                        android:tag="billstate" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@color/color_winbg"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/Label14Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="已支付明细" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_winbg"
+            android:tag="payinfo"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@color/color_winbg"
+            android:gravity="center_vertical">
+            <TextView
+                style="@style/Label14Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="支付方式" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_graybg"
+            android:orientation="horizontal">
+            <TableRow>
+                <TextView
+                    style="@style/PayButtonStyle"
+                    android:drawableTop="@drawable/bankpay"
+                    android:onClick="doPayYl"
+                    android:text="@string/txt_cash_payname_bank" />
+                <TextView
+                    style="@style/PayButtonStyle"
+                    android:drawableTop="@drawable/alipay"
+                    android:onClick="doPayJh"
+                    android:text="@string/txt_cash_payname_zfb" />
+
+                <TextView
+                    style="@style/PayButtonStyle"
+                    android:drawableTop="@drawable/wechatpay"
+                    android:onClick="doPayJh"
+                    android:text="@string/txt_cash_payname_wx" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/PayButtonStyle"
+                    android:drawableTop="@drawable/integral_pay"
+                    android:onClick="doPayJfk"
+                    android:text="@string/txt_cash_payname_jfk" />
+
+                <TextView
+                    style="@style/PayButtonStyle"
+                    android:drawableTop="@drawable/rmb"
+                    android:onClick="doPayLq"
+                    android:text="@string/txt_cash_payname_lq" />
+
+                <TextView
+                    style="@style/PayButtonStyle"
+                    android:drawableTop="@drawable/morepay"
+                    android:onClick="doPayBl"
+                    android:text="@string/txt_cash_payname_bl" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/color_winbg"
+            android:gravity="center_vertical"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_white"
+        android:tag="payedpanel"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                style="@style/PayEndButtonStyle"
+                android:drawableTop="@drawable/new_gou3"
+                android:text="支付完成" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/Text14Style"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/size_8dp"
+                android:text="订单号:" />
+
+            <TextView
+                style="@style/Text14Style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="billid"
+                android:text="201010010000001" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:paddingTop="@dimen/size_6dp">
+
+            <TextView
+                style="@style/Label14Style"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="数量" />
+
+            <TextView
+                style="@style/Text14Style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:tag="quantity:#.#"
+                android:text="10" />
+
+            <TextView
+                style="@style/Label14Style"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:text="原价合计" />
+
+            <TextView
+                style="@style/Text14Style"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:tag="totalamount"
+                android:text="10000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white">
+
+            <TextView
+                style="@style/Label14Style"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:tag=""
+                android:text="会员折扣" />
+
+            <TextView
+                style="@style/Text14Style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:tag="vipdiscount"
+                android:text="10" />
+
+            <TextView
+                style="@style/Label14Style"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:text="单品折扣" />
+
+            <TextView
+                style="@style/Text14Style"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:tag="counterdiscount"
+                android:text="10000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white">
+
+            <TextView
+                style="@style/Label14Style"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="促销折扣" />
+
+            <TextView
+                style="@style/Text14Style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:tag="popzk"
+                android:text="0" />
+
+            <TextView
+                style="@style/Label14Style"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:text="整单折扣" />
+
+            <TextView
+                style="@style/Text14Style"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:tag="rulezk"
+                android:text="10000" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white">
+
+            <TextView
+                style="@style/Label14Style"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="总价折扣" />
+
+            <TextView
+                style="@style/Text14Style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:tag="totaldiscount"
+                android:text="0" />
+
+            <TextView
+                style="@style/Label14Style"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:text="折扣合计" />
+
+            <TextView
+                style="@style/Text14Style"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:tag="sumdiscount"
+                android:text="10000" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:paddingBottom="6dp">
+
+            <TextView
+                style="@style/Label16Style"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="应收金额" />
+
+            <TextView
+                style="@style/Text16StyleRed"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:tag="amount"
+                android:text="10000" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/color_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center_vertical">
+            <TextView
+                style="@style/Text14Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/size_8dp"
+                android:textColor="@color/color_black"
+                android:text="支付明细:" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_winbg"
+            android:orientation="vertical"
+            android:tag="payendinfo"
+            android:paddingLeft="8dp">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            style="@style/Text16Style"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_graybg"
+            android:gravity="center"
+            android:onClick="doCd"
+            android:text="撤单" />
+
+        <TextView
+            style="@style/Text16Style"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_graybg"
+            android:gravity="center"
+            android:onClick="doGd"
+            android:tag="btgd"
+            android:text="挂单" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_graybg" />
+
+        <TextView
+            style="@style/Text16Style"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_button1"
+            android:gravity="center"
+            android:onClick="doPrint"
+            android:tag="printbtn"
+            android:text="打印小票"
+            android:textColor="@color/color_white" />
+
+        <TextView
+            style="@style/Text16Style"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_button1"
+            android:gravity="center"
+            android:onClick="doPayCash"
+            android:tag="paycash"
+            android:text="现金支付"
+            android:visibility="gone"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+</LinearLayout>

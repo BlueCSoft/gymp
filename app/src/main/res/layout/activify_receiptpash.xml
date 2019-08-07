@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cashmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="com.synics.gymp.cash.CashmainActivity">
+
+    <RelativeLayout
+        android:id="@+id/id_common_query_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_headpanel"
+        android:background="@color/color_titlebg">
+
+        <TextView
+            style="@style/WindowTitle"
+            android:text="款台收银单"/>
+
+        <ImageView
+            style="@style/ReturnButtonStyle"
+            android:tag="returnbutton"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size_8dp"
+            android:text="专柜号:" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="counterid"
+            android:text="010001" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size_8dp"
+            android:text="收银员:" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="cashier"
+            android:text="小芳" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size_8dp"
+            android:text="订单号:" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="billid"
+            android:text="201010010000001" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size_8dp"
+            android:text="时间:" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="billdate"
+            android:text="2019-07-10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size_8dp"
+            android:text="卡号:" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="vipid"
+            android:text="2010000001" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size_8dp"
+            android:text="卡类型:" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="viptype"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_gray"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="4dp"
+            android:tag="goodslist"
+            android:padding="@dimen/size_4dp"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:paddingTop="@dimen/size_6dp">
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="数量：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:tag="quantity:#.#"
+                    android:text="10" />
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="原价合计：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:tag="totalamount"
+                    android:text="10000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white">
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:tag=""
+                    android:text="会员折扣：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:tag="vipdiscount"
+                    android:text="10" />
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单品折扣：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:tag="counterdiscount"
+                    android:text="10000" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white">
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="促销折扣：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:tag="popzk"
+                    android:text="" />
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="整单折扣：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:tag="rulezk"
+                    android:text="10000" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white">
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="总价折扣：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:tag="totaldiscount"
+                    android:text="" />
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合计折扣：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:tag="sumdiscount"
+                    android:text="10000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@color/color_white">
+
+                <TextView
+                    style="@style/Label18Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="应收金额：" />
+
+                <TextView
+                    style="@style/Text18Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:tag="amount"
+                    android:textStyle="bold"
+                    android:text="10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            style="@style/Text16Style"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_graybg"
+            android:gravity="center"
+            android:onClick="closeActivity"
+            android:text="取消" />
+
+        <TextView
+            style="@style/Text16Style2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/color_graybg"
+            android:gravity="center"/>
+
+        <TextView
+            style="@style/Text16Style3"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_button1"
+            android:gravity="center"
+            android:onClick="doPrint"
+            android:text="打印收款凭证" />
+
+    </LinearLayout>
+</LinearLayout>

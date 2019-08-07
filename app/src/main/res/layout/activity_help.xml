@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.synics.gymp.setting.HelpActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_headpanel"
+        android:background="@color/color_titlebg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/txt_set_help_title"
+            android:textColor="@color/color_white"
+            android:onClick="closeActivity"
+            android:textSize="@dimen/fontsize_headpanel" />
+
+        <ImageView
+            android:id="@+id/id_set_help_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/login_content"
+            android:padding="@dimen/size_10dp"
+            android:src="@drawable/return_exit" />
+    </RelativeLayout>
+</RelativeLayout>

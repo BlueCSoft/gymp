@@ -1,0 +1,96 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">友谊移动收款系统</string>
+    <string name="app_ver">版本：1.0.0</string>
+    <string name="title_activity_ali_pay">AliPayActivity</string>
+    <string name="title_activity_wechat_pay">WechatPayActivity</string>
+
+    <string name="button_txt_ok">确定</string>
+    <string name="button_txt_cancel">取消</string>
+    <string name="button_txt_exit">退出登录</string>
+    <string name="other_dot">.</string>
+    <string name="other_colon">:</string>
+
+    <string name="login_content">友谊</string>
+    <string name="login_title">欢迎使用专柜收款系统</string>
+    <string name="login_uid">工号</string>
+    <string name="login_pwd">密码</string>
+    <string name="login_btok">登  录</string>
+    <string name="login_savepwd">保存密码</string>
+    <string name="login_changepwd">修改密码</string>
+
+    <string name="login_errormsg">工号或密码错误，请重新输入</string>
+    <string name="login_serverurlmsg">请先设置服务器地址</string>
+    <string name="login_uiderrormsg">请输入工号</string>
+    <string name="login_pwderrormsg">请输入密码</string>
+    <string name="login_shortname">友谊万岁</string>
+    <string name="login_version">V 1.0.0.190622</string>
+
+    <string name="loginset_txt_serverurl">服务器地址</string>
+    <string name="loginset_txt_counterid">终端编号</string>
+
+    <string name="tab_cash_caption">录单</string>
+    <string name="tab_query_caption">查询</string>
+    <string name="tab_trans_caption">办理</string>
+    <string name="tab_setting_caption">设置</string>
+
+    <string name="txt_cash_dosell_title">销售开单</string>
+    <string name="txt_cash_dopresell_title">预售开单</string>
+    <string name="txt_cash_doyss_title">YSS订单</string>
+    <string name="txt_cash_dopaycash_title">代收订单</string>
+    <string name="txt_cash_pay_title">收银</string>
+
+    <string name="txt_cash_payname_bank">银联</string>
+    <string name="txt_cash_payname_zfb">支付宝</string>
+    <string name="txt_cash_payname_wx">微信</string>
+    <string name="txt_cash_payname_jfk">积分卡</string>
+    <string name="txt_cash_payname_lq">礼券</string>
+    <string name="txt_cash_payname_bl">补录</string>
+    <string name="txt_cash_payname_xj">现金</string>
+
+    <string name="txt_query_daybillrep_title">订单日报</string>
+    <string name="txt_query_daysellrep_title">销售日报</string>
+    <string name="txt_query_payquery_title">支付查询</string>
+    <string name="txt_query_logquery_title">签到签退查询</string>
+    <string name="txt_query_goodsquery_title">商品查询</string>
+
+    <string name="txt_tran_billdo_title">订单办理</string>
+    <string name="txt_tran_storedo_title">库存变动</string>
+
+    <string name="txt_login_setting_title">设置</string>
+
+    <string name="txt_set_poscode_title">销售码设置</string>
+    <string name="txt_set_param_title">参数设置</string>
+    <string name="txt_set_changepwd_title">密码修改</string>
+    <string name="txt_set_sysinfo_title">系统信息</string>
+    <string name="txt_set_help_title">帮    助</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_exam">Sign in</string>
+    <string name="title_activity_pcodeseting">pcodesetingActivity</string>
+
+    <!-- printer -->
+    <string name="printer_fontset_ascii">ascii:</string>
+    <string name="printer_fontset_extcode">extCode:</string>
+    <string name="printer_bitmap_contain">contain bitmap</string>
+    <string name="printer_bitmap_no">no bitmap</string>
+    <string name="printer_spaceset_word">word space</string>
+    <string name="printer_spaceset_line">line space</string>
+    <string name="printer_leftindent">left indent</string>
+    <string name="printer_setgray">set gray</string>
+    <string name="printer_double_width">double width</string>
+    <string name="printer_normal_width">normal width</string>
+    <string name="printer_double_height">double height</string>
+    <string name="printer_normal_height">normal height</string>
+    <string name="printer_invert">invert print</string>
+    <string name="printer_normal">normal print</string>
+    <string name="printer_step">print step</string>
+    <string name="printer_status">getStatus</string>
+    <string name="printer_getdotline">getDotLine</string>
+    <string name="printer_prnstr">print string </string>
+    <string name="printer_start">start</string>
+    <string name="printer_edit_hint">0</string>
+    <string name="printer_edit_gray_hint">1</string>
+    <string name="printer_step_hint">150</string>
+    <string name="printer_test_str">打印测试语句12345678</string>
+</resources>

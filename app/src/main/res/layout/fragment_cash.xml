@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_winbg"
+    android:orientation="vertical"
+    tools:context="com.synics.gymp.fragment.CashFragment">
+
+    <RelativeLayout
+        android:id="@+id/cash_top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_headpanel"
+        android:background="@color/color_titlebg">
+
+        <TextView
+            android:id="@+id/cash_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/tab_cash_caption"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/fontsize_headpanel" />
+
+        <ImageView
+            android:id="@+id/id_cash_vip_inp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/size_8dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/login_content"
+            android:src="@drawable/not_scan_card" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="@dimen/size_24dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_4dp">
+
+        <TextView
+            style="@style/CashInfoStyle"
+            android:text="终端号" />
+
+        <TextView
+            android:id="@+id/id_cash_mposid"
+            style="@style/CashInfoStyle1"
+            android:layout_width="88dp"
+            android:hint="0101001" />
+
+        <TextView
+            style="@style/CashInfoStyle"
+            android:text="收银员" />
+
+        <TextView
+            android:id="@+id/id_cash_sales"
+            style="@style/CashInfoStyle1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="123" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="24dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_4dp">
+
+        <TextView
+            style="@style/CashInfoStyle"
+            android:text="专    柜" />
+
+        <TextView
+            android:id="@+id/id_cash_counterid"
+            style="@style/CashInfoStyle1"
+            android:layout_width="wrap_content"
+            android:hint="01" />
+
+        <TextView
+            style="@style/CashInfoStyle1"
+            android:layout_width="wrap_content"
+            android:text="(" />
+
+        <TextView
+            android:id="@+id/id_cash_counter"
+            style="@style/CashInfoStyle1"
+            android:layout_width="wrap_content"
+            android:hint="02" />
+
+        <TextView
+            style="@style/CashInfoStyle1"
+            android:layout_width="wrap_content"
+            android:text=")" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/id_cash_sellbt"
+            style="@style/CashButtonStyle"
+            android:drawableTop="@drawable/new_kd1_l"
+            android:text="@string/txt_cash_dosell_title" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/id_cash_presellbt"
+            style="@style/CashButtonStyle"
+            android:drawableTop="@drawable/new_clock_l"
+            android:text="@string/txt_cash_dopresell_title" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/size_12dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/id_cash_yss"
+            style="@style/CashButtonStyle"
+            android:drawableTop="@drawable/new_yss_l"
+            android:text="@string/txt_cash_doyss_title" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/id_cash_paycash"
+            style="@style/CashButtonStyle"
+            android:drawableTop="@drawable/cashpay_1"
+            android:text="@string/txt_cash_dopaycash_title"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/id_cash_paycash0"
+            android:layout_width="118dp"
+            android:layout_height="112dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_4dp">
+
+        <TextView
+            style="@style/CashInfoStylet"
+            android:layout_width="56dp"
+            android:layout_marginLeft="24dp"
+            android:text="今日" />
+
+        <TextView
+            style="@style/CashInfoStylet"
+            android:layout_width="40dp"
+            android:text="销售:" />
+
+        <TextView
+            android:id="@+id/id_cash_sum_kd"
+            style="@style/CashInfoStylet"
+            android:layout_width="96dp"
+            android:text="100" />
+
+        <TextView
+            style="@style/CashInfoStylet"
+            android:layout_width="40dp"
+            android:text="预售:" />
+
+        <TextView
+            android:id="@+id/id_cash_sum_ys"
+            style="@style/CashInfoStylet"
+            android:layout_width="wrap_content"
+            android:text="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_4dp">
+
+        <TextView
+            style="@style/CashInfoStylet"
+            android:layout_width="56dp"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:id="@+id/id_cash_sum_gd0"
+            style="@style/CashInfoStylet"
+            android:layout_width="40dp"
+            android:text="挂单:" />
+
+        <TextView
+            android:id="@+id/id_cash_sum_gd"
+            style="@style/CashInfoStylet"
+            android:layout_width="96dp"
+            android:text="100" />
+
+        <TextView
+            style="@style/CashInfoStylet"
+            android:layout_width="40dp"
+            android:text="撤单:" />
+
+        <TextView
+            android:id="@+id/id_cash_sum_cd"
+            style="@style/CashInfoStylet"
+            android:layout_width="wrap_content"
+            android:text="10" />
+    </LinearLayout>
+</LinearLayout>

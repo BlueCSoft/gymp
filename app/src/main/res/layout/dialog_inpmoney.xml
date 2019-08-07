@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text20Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="支付金额输入" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="@dimen/size_40dp"
+        android:layout_marginRight="@dimen/size_40dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            style="@style/Text20Style"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/input_radius"
+            android:drawableLeft="@drawable/cashier_selected"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/size_12dp"
+            android:selectAllOnFocus="true"
+            android:hint="请输入支付金额"
+            android:tag="inpedit" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="@dimen/size_40dp"
+        android:layout_marginRight="@dimen/size_40dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="@dimen/size_8dp"
+            android:tag="info"
+            android:text="金额范围：0.1-1000" />
+    </LinearLayout>
+    <include layout="@layout/dialog_bottom"/>
+</LinearLayout>

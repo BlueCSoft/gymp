@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sysinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.synics.gymp.setting.SysinfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_headpanel"
+        android:background="@color/color_titlebg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/txt_set_sysinfo_title"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/fontsize_headpanel" />
+
+        <ImageView
+            android:id="@+id/id_set_sysinfo_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/login_content"
+            android:padding="@dimen/size_4dp"
+            android:src="@drawable/return_exit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/id_set_sysinfo_panel"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Text24Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textStyle="bold"/>
+
+        <TextView
+            style="@style/Text20Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="@string/app_ver"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:id="@+id/id_set_sysinfo_btok"
+            style="@style/Button16Style"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button1_radius"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="检查最新版本"/>
+    </LinearLayout>
+</RelativeLayout>

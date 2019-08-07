@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_casheditproduct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="com.synics.gymp.cash.CasheditproductActivity">
+
+    <RelativeLayout
+        android:id="@+id/id_common_query_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_headpanel"
+        android:background="@color/color_titlebg">
+
+        <TextView
+            style="@style/WindowTitle"
+            android:tag="title"
+            android:text="商品录入" />
+
+        <ImageView style="@style/ReturnButtonStyle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white">
+
+        <LinearLayout
+            android:id="@+id/id_setting_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:divider="@drawable/divider_line"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_defaultpanel"
+                android:layout_marginLeft="@dimen/size_8dp"
+                android:layout_marginRight="@dimen/size_8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text="商品码" />
+
+                <EditText
+                    style="@style/Text14Style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_radius"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp"
+                    android:tag="poscode"
+                    android:text="123" />
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="16dp"
+                    android:onClick="onSelectCode"
+                    android:padding="4dp"
+                    android:src="@drawable/search_icon" />
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="16dp"
+                    android:onClick="onScanCodeClick"
+                    android:padding="4dp"
+                    android:src="@drawable/new_scan2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_defaultpanel"
+                android:layout_marginLeft="@dimen/size_8dp"
+                android:layout_marginRight="@dimen/size_8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text="品名" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:paddingLeft="8dp"
+                    android:tag="posname"
+                    android:text="123" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_defaultpanel"
+                android:layout_marginLeft="@dimen/size_8dp"
+                android:layout_marginRight="@dimen/size_8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text="货号" />
+
+                <EditText
+                    style="@style/Text14Style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_radius"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp"
+                    android:selectAllOnFocus="true"
+                    android:tag="productcode"
+                    android:text="123" />
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="16dp"
+                    android:onClick="onScanhhClick"
+                    android:padding="4dp"
+                    android:src="@drawable/new_scan2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_defaultpanel"
+                android:layout_marginLeft="@dimen/size_8dp"
+                android:layout_marginRight="@dimen/size_8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text="原价" />
+
+                <EditText
+                    style="@style/Text14Style"
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/input_radius"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:paddingLeft="8dp"
+                    android:tag="iprice"
+                    android:selectAllOnFocus="true"
+                    android:text="123" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_defaultpanel"
+                android:layout_marginLeft="@dimen/size_8dp"
+                android:layout_marginRight="@dimen/size_8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="数量" />
+
+                <TextView
+                    style="@style/Text20Style"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/button_decnum"
+                    android:gravity="center"
+                    android:onClick="decNumClick"
+                    android:text="－" />
+
+                <EditText
+                    style="@style/Text14Style"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/input_radius"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:tag="quantity"
+                    android:selectAllOnFocus="true"
+                    android:gravity="center"
+                    android:text="123" />
+
+                <TextView
+                    style="@style/Text20Style"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/button_addnum"
+                    android:gravity="center"
+                    android:onClick="addNumClick"
+                    android:text="+"
+                    android:textColor="@color/color_white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_graybg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_defaultpanel"
+        android:layout_marginLeft="@dimen/size_8dp"
+        android:layout_marginRight="@dimen/size_8dp"
+        android:gravity="center_vertical"
+        android:tag="dsortoppanel"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="" />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:tag="discountsort">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="单品.会员" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="会员.单品" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="80dp"
+            android:paddingLeft="4dp"
+            android:layout_marginLeft="@dimen/size_16dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_defaultpanel"
+        android:layout_marginLeft="@dimen/size_8dp"
+        android:layout_marginRight="@dimen/size_8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="单品折" />
+
+        <RadioGroup
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:tag="counterdiscountatt">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="折扣" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="折价" />
+        </RadioGroup>
+
+        <EditText
+            style="@style/Text14Style"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/size_16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/input_radius"
+            android:paddingLeft="4dp"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:tag="counterdiscountrate"
+            android:selectAllOnFocus="true"
+            android:text="123" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_defaultpanel"
+        android:layout_marginLeft="@dimen/size_8dp"
+        android:layout_marginRight="@dimen/size_8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="分摊" />
+
+        <RadioGroup
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:tag="ccountershareatt">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="厂商" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="友谊" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="共同" />
+        </RadioGroup>
+
+        <EditText
+            style="@style/Text14Style"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/size_16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/input_radius"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:paddingLeft="4dp"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:tag="csupplysharerate"
+            android:text="123" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_graybg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_defaultpanel"
+        android:layout_marginLeft="@dimen/size_8dp"
+        android:layout_marginRight="@dimen/size_8dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:tag="vipoppanel"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="会员折" />
+
+        <RadioGroup
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:tag="vipdiscountatt">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:enabled="false"
+                android:text="折扣" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:enabled="false"
+                android:text="折价" />
+        </RadioGroup>
+
+        <EditText
+            style="@style/Text14Style"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/size_16dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/input_radius"
+            android:maxLines="1"
+            android:paddingLeft="4dp"
+            android:inputType="numberDecimal"
+            android:tag="vipdiscountrate"
+            android:selectAllOnFocus="true"
+            android:enabled="false"
+            android:text="123" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_graybg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_defaultpanel"
+        android:layout_marginLeft="@dimen/size_8dp"
+        android:layout_marginRight="@dimen/size_8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:text="售价" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:tag="price"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_defaultpanel"
+        android:background="@color/color_graybg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/size_8dp"
+        android:paddingRight="@dimen/size_8dp">
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="@dimen/size_64dp"
+            android:layout_height="wrap_content"
+            android:text="应付：¥" />
+
+        <TextView
+            style="@style/Text18Style2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:tag="amount"
+            android:text="0.00" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="@dimen/size_64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_24dp"
+            android:text="优惠：¥" />
+
+        <TextView
+            style="@style/Text18Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:tag="sumdiscount"
+            android:text="0.00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            style="@style/Text16Style"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:onClick="closeActivity"
+            android:text="取消" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_white" />
+
+        <TextView
+            style="@style/Text16Style3"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_button1"
+            android:gravity="center"
+            android:onClick="doComfirm"
+            android:text="确定" />
+
+    </LinearLayout>
+</LinearLayout>

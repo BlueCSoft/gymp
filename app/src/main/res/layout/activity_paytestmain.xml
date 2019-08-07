@@ -1,0 +1,310 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pax.pay.cup.test.MainActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="3" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnBindService"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="OnClickListener"
+                android:text="绑定服务" />
+
+            <Button
+                android:id="@+id/btnJhPosScan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="聚合被扫支付" />
+
+            <Button
+                android:id="@+id/btnJhPhoneScan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="聚合扫码支付" />
+
+            <Button
+                android:id="@+id/btnJhrefund"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="聚合退款" />
+
+            <Button
+                android:id="@+id/btnJhrefundQuery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="聚合退款查询" />
+
+            <Button
+                android:id="@+id/btnJhUnknow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="聚合未知交易" />
+
+            <Button
+                android:id="@+id/btnSale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="消费" />
+
+            <Button
+                android:id="@+id/btnSaleVoid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="消费撤销" />
+
+            <Button
+                android:id="@+id/btnRefund"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="退货" />
+
+            <Button
+                android:id="@+id/btnAuth"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="预授权" />
+
+            <Button
+                android:id="@+id/btnAuthVoid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="预授权撤销" />
+
+            <Button
+                android:id="@+id/btnAuthCM"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="预授权完成请求" />
+
+            <Button
+                android:id="@+id/btnAuthCMAdv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="预授权完成通知" />
+
+            <Button
+                android:id="@+id/btnAuthCMVoid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="预授权完成请求撤销" />
+
+            <Button
+                android:id="@+id/btnBalance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="余额查询" />
+
+            <Button
+                android:id="@+id/btnLogon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="签到" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="签退" />
+
+            <Button
+                android:id="@+id/btnSettle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="结算" />
+
+            <Button
+                android:id="@+id/btnPrnLast"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="打印最后一笔" />
+
+            <Button
+                android:id="@+id/btnPrnDetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="打印明细" />
+
+            <Button
+                android:id="@+id/btnPrnTotal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="打印交易汇总" />
+
+            <Button
+                android:id="@+id/btnPrnLastBatch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="打印上批总计" />
+
+            <Button
+                android:id="@+id/btnPrintAny"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="重打印任意一笔" />
+
+            <Button
+                android:id="@+id/btnReadCradNo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="读卡号" />
+
+            <Button
+                android:id="@+id/btnSetting"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="终端参数设置" />
+
+            <Button
+                android:id="@+id/btnBitmap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="打印图片" />
+
+            <Button
+                android:id="@+id/btnQuery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="交易查询" />
+
+            <Button
+                android:id="@+id/btnQrSale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="扫码消费" />
+
+            <Button
+                android:id="@+id/btnQrVoid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="扫码撤销" />
+
+            <Button
+                android:id="@+id/btnQrRefund"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="OnClickListener"
+                android:text="扫码退货" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#545454" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_weight="6"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp" >
+
+                <TextView
+                    android:id="@+id/result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="result:" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/cancle2"
+                android:onClick="OnClickListener" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

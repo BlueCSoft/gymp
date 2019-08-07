@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation"
+    >
+    <string-array name="lockscreen_mins">
+        <item>永不锁屏</item>
+        <item>1分钟</item>
+        <item>2分钟</item>
+        <item>3分钟</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>20分钟</item>
+        <item>30分钟</item>
+    </string-array>
+
+    <string-array name="round_scale">
+        <item>不舍入</item>
+        <item>舍到角</item>
+        <item>舍到元</item>
+    </string-array>
+
+    <string-array name="product_status">
+        <item>全部</item>
+        <item>上架</item>
+        <item>下架</item>
+    </string-array>
+
+
+    <string-array name="order_status">
+        <item>全部</item>
+        <item>发货完成</item>
+        <item>确认完成</item>
+        <item>支付完成</item>
+        <item>支付中</item>
+        <item>录单中</item>
+        <item>撤单中</item>
+        <item>撤单冲正完成</item>
+        <item>撤单确认完成</item>
+    </string-array>
+
+    <string-array name="payment_way">
+        <item>全部</item>
+        <item>非现金支付</item>
+        <item>现金支付</item>
+    </string-array>
+
+    <string-array name="coupon_status">
+        <item>全部</item>
+        <item>未赠券</item>
+        <item>已赠券</item>
+    </string-array>
+
+    <string-array name="xslx">
+        <item>全部</item>
+        <item>销售</item>
+        <item>预售</item>
+    </string-array>
+
+    <string-array name="zffs">
+        <item>全部</item>
+        <item>银联</item>
+        <item>微信</item>
+        <item>支付宝</item>
+    </string-array>
+
+    <string-array name="payattlist">
+        <item>银联</item>
+        <item>微信</item>
+        <item>支付宝</item>
+        <item>积分卡</item>
+        <item>礼券</item>
+    </string-array>
+
+    <string-array name="Printer">
+        <item>print</item>
+        <item>cut paper</item>
+    </string-array>
+</resources>

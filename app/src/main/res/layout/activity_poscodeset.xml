@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="com.synics.gymp.setting.PoscodesetActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_headpanel"
+        android:background="@color/color_titlebg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/txt_set_poscode_title"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/fontsize_headpanel" />
+        <ImageView
+            android:id="@+id/id_set_poscode_exit"
+            android:padding="@dimen/size_4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/return_exit"
+            android:contentDescription="@string/login_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:divider="@drawable/divider_line"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@color/color_graybg">
+                <TextView
+                    style="@style/Text16Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8dp"
+                    android:text="可选"/>
+                <TextView
+                    android:id="@+id/id_set_poscode_csel"
+                    style="@style/Text16Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginRight="@dimen/size_8dp"
+                    android:text="0"/>
+            </LinearLayout>
+            <ListView
+                android:id="@+id/id_set_poscode_lvleft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/color_gray"
+                android:dividerHeight="1px"
+                android:background="@drawable/border_rect">
+
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@color/color_graybg">
+                <TextView
+                    style="@style/Text16Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8dp"
+                    android:text="已选"/>
+                <TextView
+                    android:id="@+id/id_set_poscode_sels"
+                    style="@style/Text16Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginRight="@dimen/size_8dp"
+                    android:text="0"/>
+            </LinearLayout>
+            <ListView
+                android:id="@+id/id_set_poscode_lvright"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/color_gray"
+                android:dividerHeight="1px"
+                android:background="@drawable/border_rect">
+
+            </ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

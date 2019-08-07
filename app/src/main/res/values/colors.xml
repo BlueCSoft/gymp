@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!--页标题背景-->
+    <color name="color_titlebg">#9b0453</color>
+    <color name="color_graybg">#f2f2f2</color>
+    <color name="color_winbg">#fcfcfc</color>
+
+    <!--按钮-->
+    <color name="color_button1">#9b0453</color>
+    <color name="color_button2">#339966</color>
+    <color name="color_btdisabled">#9d9d9d</color>
+    <color name="color_bttext">#999999</color>
+    <!--白色-->
+    <color name="color_white">#ffffff</color>
+    <!--黑色-->
+    <color name="color_black">#000000</color>
+    <!--红色-->
+    <color name="color_red">#ff0000</color>
+    <!--正文文本-->
+    <color name="color_text">#333333</color>
+    <!--正文标题-->
+    <color name="color_label">#999999</color>
+    <color name="color_gray">#999999</color>
+    <color name="text_color_f2">#f2f2f2</color>
+    <color name="color_green">#00aa00</color>
+    <!--线框-->
+    <color name="color_border">#e4e4e4</color>
+    <!--分割条的分割线-->
+    <color name="div_line1">#e4e4e4</color>
+    <color name="div_line2">#d1d1d1</color>
+    <color name="div_line3">#818181</color>
+
+    <color name="colorAccent">#FF4081</color>
+</resources>

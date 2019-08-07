@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/id_selldayreport_recno"
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/id_selldayreport_pm"
+            style="@style/Text16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="2251" />
+        <TextView
+            android:id="@+id/id_selldayreport_dm"
+            style="@style/Text16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_16dp"
+            android:gravity="left"
+            android:text="2251" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期:" />
+
+        <TextView
+            android:id="@+id/id_selldayreport_rq"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="2251" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="笔数:"
+            />
+
+        <TextView
+            android:id="@+id/id_selldayreport_bs"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量:" />
+
+        <TextView
+            android:id="@+id/id_selldayreport_sl"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="12" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额:"
+            />
+
+        <TextView
+            android:id="@+id/id_selldayreport_je"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0.00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="折扣:" />
+
+        <TextView
+            android:id="@+id/id_selldayreport_zk"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="12" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应收:"
+            />
+
+        <TextView
+            android:id="@+id/id_selldayreport_ys"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0.00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="均价:" />
+
+        <TextView
+            android:id="@+id/id_selldayreport_dj"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="12" />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/color_border" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 第一组item：设置边框 -->
+    <item>
+        <shape>
+            <!-- 设置边框线宽度和颜色 -->
+            <solid android:color="@color/color_white"/>
+            <stroke android:width="1dp" android:color="@color/color_gray" />
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+
+    <!-- 第二组item：设置spinner箭头图片(替换默认箭头) -->
+    <item>
+        <!-- bitmap.gravity：设置spinner的箭头放置位置 -->
+        <!-- bitmap.src：设置替换原spinner的箭头的图片资源 -->
+        <bitmap
+            android:gravity="end"
+            android:src="@drawable/drop_down">
+        </bitmap>
+    </item>
+
+</layer-list>

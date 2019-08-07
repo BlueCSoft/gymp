@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/id_order_query_recno"
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/id_order_infoinp_poscode"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="201010010000001"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/id_order_infoinp_posname"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="123"/>
+    </LinearLayout>
+    <!--型号尺寸-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="货号:" />
+
+        <TextView
+            android:id="@+id/id_order_infoinp_productcode"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="2251" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品名:" />
+
+        <TextView
+            android:id="@+id/id_order_infoinp_productname"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="规格:" />
+
+        <TextView
+            android:id="@+id/id_order_infoinp_spec"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="黑色" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尺码:" />
+
+        <TextView
+            android:id="@+id/id_order_infoinp_nsize"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="黑色" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="颜色:" />
+
+        <TextView
+            android:id="@+id/id_order_infoinp_color"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="黑色" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="3"/>
+        <TextView
+            android:id="@+id/id_order_infoinp_btedit"
+            style="@style/Text14Style"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_item1"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text=" 修改 " />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_border" />
+</LinearLayout>

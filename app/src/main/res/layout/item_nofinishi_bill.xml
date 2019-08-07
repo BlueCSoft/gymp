@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+            style="@style/Label14Style"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:text="订单号" />
+        <TextView
+            android:id="@+id/id_item_nofinishi_billid"
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/id_item_nofinishi_recno"
+            style="@style/Text14Style"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="1" />
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="#" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_border" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            style="@style/Label14Style"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:text="卡号" />
+
+        <TextView
+            android:id="@+id/id_item_nofinishi_vipid"
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="2251" />
+
+        <TextView
+            style="@style/Label14Style"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="金额"
+            />
+
+        <TextView
+            android:id="@+id/id_item_nofinishi_totalamount"
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="100" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_border" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            style="@style/Label14Style"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:text="支付" />
+
+        <TextView
+            android:id="@+id/id_item_nofinishi_payatt"
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="2251" />
+
+        <TextView
+            style="@style/Label14Style"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="状态"
+            />
+
+        <TextView
+            android:id="@+id/id_item_nofinishi_billstate"
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="100" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_border" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            style="@style/Label14Style"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:text="时间" />
+
+        <TextView
+            android:id="@+id/id_item_nofinishi_billdate"
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="2251" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/color_border" />
+</LinearLayout>

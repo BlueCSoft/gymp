@@ -1,0 +1,262 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--Theme.AppCompat.Light.NoActionBar-->
+        <!--android:Theme.DeviceDefault.Panel-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--窗口标题-->
+    <style name="WindowTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/size_20dp</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--文本样式-->
+    <style name="Text14Style">
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="Text14StyleRed">
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:textColor">@color/color_red</item>
+    </style>
+
+    <style name="Text16Style">
+        <item name="android:textSize">@dimen/text_16sp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="Text16StyleRed">
+        <item name="android:textSize">@dimen/text_16sp</item>
+        <item name="android:textColor">@color/color_red</item>
+    </style>
+
+    <style name="Text16Style2">
+        <item name="android:textSize">@dimen/text_16sp</item>
+        <item name="android:textColor">@color/color_titlebg</item>
+    </style>
+
+    <style name="Text16Style3">
+        <item name="android:textSize">@dimen/text_16sp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="Text18Style">
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="Text18Style2">
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/color_titlebg</item>
+    </style>
+
+    <style name="Text18Style3">
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="Text20Style">
+        <item name="android:textSize">@dimen/text_20sp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="Text20Style2">
+        <item name="android:textSize">@dimen/text_20sp</item>
+        <item name="android:textColor">@color/color_titlebg</item>
+    </style>
+
+    <style name="Text24Style">
+        <item name="android:textSize">@dimen/text_24sp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="Text26Style">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="Text24Styleb">
+        <item name="android:textSize">@dimen/text_24sp</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!--标题样式-->
+    <style name="Label14Style">
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:textColor">@color/color_label</item>
+    </style>
+
+    <style name="Label16Style">
+        <item name="android:textSize">@dimen/text_16sp</item>
+        <item name="android:textColor">@color/color_label</item>
+    </style>
+
+    <style name="Label18Style">
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/color_label</item>
+    </style>
+    <!--按钮样式-->
+    <style name="Button14Style">
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="Button16Style">
+        <item name="android:textSize">@dimen/text_16sp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="Button18Style">
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <!--信息样式-->
+    <style name="AlertStyle">
+        <item name="android:textSize">@dimen/text_16sp</item>
+        <item name="android:textColor">@color/color_red</item>
+    </style>
+
+    <!--首页样式-->
+    <style name="CashInfoStyle">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/size_14dp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="CashInfoStyle1">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/size_14dp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="CashInfoStylet">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/size_16dp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="CashButtonStyle">
+        <item name="android:layout_width">118dp</item>
+        <item name="android:layout_height">112dp</item>
+        <item name="android:background">@drawable/fun_button_cash</item>
+        <item name="android:drawablePadding">@dimen/size_4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/size_12dp</item>
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="IpInpStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">3</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:paddingLeft">@dimen/size_8dp</item>
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:inputType">number</item>
+        <item name="android:background">@null</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+    <!--功能列表按钮样式-->
+    <style name="FunButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/color_winbg</item>
+        <item name="android:drawablePadding">@dimen/size_4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/size_20dp</item>
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+
+    <style name="PayButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_winbg</item>
+        <item name="android:drawablePadding">@dimen/size_4dp</item>
+        <item name="android:layout_margin">1px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/size_14dp</item>
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:textColor">@color/color_gray</item>
+    </style>
+
+    <style name="PayEndButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:drawablePadding">@dimen/size_4dp</item>
+        <item name="android:layout_margin">1px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/size_14dp</item>
+        <item name="android:textSize">@dimen/text_18sp</item>
+        <item name="android:textColor">@color/color_text</item>
+    </style>
+    <!--返回按钮样式-->
+    <style name="ReturnButtonStyle">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginLeft">@dimen/size_12dp</item>
+        <item name="android:contentDescription">@string/login_content</item>
+        <item name="android:onClick">closeActivity</item>
+        <item name="android:padding">@dimen/size_2dp</item>
+        <item name="android:tag">closebutton</item>
+        <item name="android:src">@drawable/return_exit</item>
+    </style>
+
+    <!--查询按钮样式-->
+    <style name="QueryButtonStyle">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginRight">@dimen/size_8dp</item>
+        <item name="android:contentDescription">@string/login_content</item>
+        <item name="android:onClick">openCondition</item>
+        <item name="android:padding">@dimen/size_4dp</item>
+        <item name="android:src">@drawable/search_iconwhite</item>
+    </style>
+
+    <!--单选按钮样式-->
+    <style name="RadioButtonStyle">
+        <item name="android:textSize">@dimen/text_14sp</item>
+        <item name="android:textColor">@drawable/button_radiocolor</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/button_radio</item>
+        <item name="android:button">@drawable/button_radio_bt</item>
+        <item name="android:layout_margin">@dimen/size_4dp</item>
+        <item name="android:padding">@dimen/size_2dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

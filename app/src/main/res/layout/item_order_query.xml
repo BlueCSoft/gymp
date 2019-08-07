@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/id_order_query_recno"
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/id_order_query_billid"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="201010010000001"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_order_query_pname"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+    </LinearLayout>
+    <!--型号尺寸-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="状态:" />
+
+        <TextView
+            android:id="@+id/id_order_query_status"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="2251" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数量:"
+
+            />
+
+        <TextView
+            android:id="@+id/id_order_query_sl"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付:" />
+
+        <TextView
+            android:id="@+id/id_order_query_pay"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实收:" />
+
+        <TextView
+            android:id="@+id/id_order_query_amount"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0.0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收银员:" />
+
+        <TextView
+            android:id="@+id/id_order_query_cashier"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="黑色" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="营业员:" />
+
+        <TextView
+            android:id="@+id/id_order_query_sales"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="黑色" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/id_order_query_billdate"
+            style="@style/Text16Style"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="S" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="@dimen/size_2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+        <TextView
+            android:id="@+id/id_order_query_info"
+            style="@style/Text14Style"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_item1"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text=" 订单详情 " />
+        <TextView
+            android:id="@+id/id_order_query_bdxp"
+            style="@style/Text14Style"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_item1"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text=" 补打小票 " />
+        <TextView
+            android:id="@+id/id_order_query_bdewm"
+            style="@style/Text14Style"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_item1"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text=" 补打二维码 " />
+        <TextView
+            android:id="@+id/id_order_query_xxbl"
+            style="@style/Text14Style"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_item1"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text=" 商品补录 " />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/color_border" />
+</LinearLayout>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cashmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    tools:context="com.synics.gymp.cash.CashmainActivity">
+
+    <RelativeLayout
+        android:id="@+id/id_common_query_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_headpanel"
+        android:background="@color/color_titlebg">
+
+        <TextView
+            style="@style/WindowTitle"
+            android:tag="caption"
+            android:text="销售单"/>
+
+        <ImageView
+            android:id="@+id/id_cash_main_vipimg"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/login_content"
+            android:padding="@dimen/size_4dp"
+            android:onClick="onSalesLogin"
+            android:src="@drawable/update_ordermain_zh" />
+
+        <TextView
+            style="@style/Label14Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/id_cash_main_vipimg"
+            android:padding="@dimen/size_2dp"
+            android:text="营业员未登录"
+            android:textColor="@color/color_white"
+            android:tag="salesinfo"
+            android:onClick="onSalesLogin"
+            android:textSize="@dimen/size_14dp" />
+
+        <ImageView
+            android:id="@+id/id_cash_main_scan"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/id_cash_main_inp"
+            android:onClick="openFindVipOp"
+            android:padding="4dp"
+            android:src="@drawable/swipe_or_scan_card" />
+
+        <ImageView
+            android:id="@+id/id_cash_main_inp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/size_8dp"
+            android:onClick="addGoods"
+            android:padding="4dp"
+            android:src="@drawable/type_in" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:onClick="showVipInfo">
+
+        <TextView
+            style="@style/Label14Style"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size_8dp"
+            android:text="会员" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="vipid"
+            android:text="0100000001(白金卡)" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="@dimen/size_8dp"
+            android:padding="4dp"
+            android:src="@drawable/jump" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_cash_main_customer_sp"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="1dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_gray" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_cash_main_customer"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:onClick="doContact">
+
+        <TextView
+            style="@style/Label14Style"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size_8dp"
+            android:text="顾客" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="customer"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="@dimen/size_8dp"
+            android:padding="4dp"
+            android:src="@drawable/jump" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/Label14Style"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size_8dp"
+            android:text="单号" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="billid"
+            android:text="201010010000001" />
+
+        <TextView
+            style="@style/Text14Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/size_24dp"
+            android:tag="billdate"
+            android:text="2019-07-10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/id_cash_main_goodslist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_gray"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="4dp"
+            android:padding="@dimen/size_4dp"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:paddingTop="@dimen/size_6dp">
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="数量：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:tag="quantity:#.#"
+                    android:text="10" />
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="原价合计：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:tag="totalamount"
+                    android:text="10000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white">
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:tag=""
+                    android:text="会员折扣：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:tag="vipdiscount"
+                    android:text="10" />
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单品折扣：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:tag="counterdiscount"
+                    android:text="10000" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white">
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="促销折扣：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:tag="popzk"
+                    android:text="" />
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="整单折扣：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:tag="rulezk"
+                    android:text="10000" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white">
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="总价折扣：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:tag="totaldiscount"
+                    android:text="" />
+
+                <TextView
+                    style="@style/Label14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合计折扣：" />
+
+                <TextView
+                    style="@style/Text14Style"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:tag="sumdiscount"
+                    android:text="10000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@color/color_white">
+
+                <TextView
+                    style="@style/Label18Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="应收金额：" />
+
+                <TextView
+                    style="@style/Text18Style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:tag="amount"
+                    android:textStyle="bold"
+                    android:text="10" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="4dp"
+                android:layout_gravity="center"
+                android:onClick="doCalErpDiscount"
+                android:src="@drawable/shoppe_promotion_unable" />
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="4dp"
+                android:layout_gravity="center"
+                android:onClick="doTotalDiscount"
+                android:src="@drawable/refund_query_tv" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            style="@style/Text16Style"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_graybg"
+            android:gravity="center"
+            android:onClick="doCd"
+            android:text="撤单" />
+
+        <TextView
+            android:id="@+id/id_cash_main_btgd"
+            style="@style/Text16Style2"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_graybg"
+            android:gravity="center"
+            android:onClick="doGd"
+            android:text="挂单" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/id_cash_main_btktsk"
+            style="@style/Text16Style3"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_button2"
+            android:gravity="center"
+            android:onClick="doKtsk"
+            android:text="款台收银" />
+
+        <TextView
+            android:id="@+id/id_cash_main_zgsk"
+            style="@style/Text16Style3"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_button1"
+            android:gravity="center"
+            android:onClick="doPay"
+            android:text="专柜收银" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/id_loginout_query_recno"
+            style="@style/Label16Style"
+            android:layout_width="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="1" />
+
+        <TextView
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="收银员代码:" />
+
+        <TextView
+            android:id="@+id/id_loginout_query_dm"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="2251" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收银员:"
+            />
+
+        <TextView
+            android:id="@+id/id_loginout_query_mc"
+            style="@style/Text16Style"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+
+            android:text="复古" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="类型:" />
+
+        <TextView
+            android:id="@+id/id_loginout_query_lx"
+            style="@style/Text16Style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="2251" />
+
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="方式:"
+            />
+
+        <TextView
+            android:id="@+id/id_loginout_query_fs"
+            style="@style/Text16Style"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="复古" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_2dp">
+        <TextView
+            style="@style/Label16Style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/id_loginout_query_sj"
+            style="@style/Text16Style"
+            android:layout_marginRight="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-01-01 11:23" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/color_border" />
+</LinearLayout>
